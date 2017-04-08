@@ -1,0 +1,33 @@
+18:15:35 **** Build of configuration Debug for project usbd_lib_hid_keyboard ****
+make -r all 
+Building file: ../example/src/hid_keyboard.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\usbd_lib_hid_keyboard\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc\usbd" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/hid_keyboard.d" -MT"example/src/hid_keyboard.o" -MT"example/src/hid_keyboard.d" -o "example/src/hid_keyboard.o" "../example/src/hid_keyboard.c"
+../example/src/hid_keyboard.c: In function 'Keyboard_UpdateReport':
+../example/src/hid_keyboard.c:70:28: warning: implicit declaration of function 'Joystick_GetStatus' [-Wimplicit-function-declaration]
+  uint8_t joystick_status = Joystick_GetStatus();
+                            ^
+../example/src/hid_keyboard.c:75:7: error: 'JOY_PRESS' undeclared (first use in this function)
+  case JOY_PRESS:
+       ^
+../example/src/hid_keyboard.c:75:7: note: each undeclared identifier is reported only once for each function it appears in
+../example/src/hid_keyboard.c:79:7: error: 'JOY_LEFT' undeclared (first use in this function)
+  case JOY_LEFT:
+       ^
+../example/src/hid_keyboard.c:83:7: error: 'JOY_RIGHT' undeclared (first use in this function)
+  case JOY_RIGHT:
+       ^
+../example/src/hid_keyboard.c:87:7: error: 'JOY_UP' undeclared (first use in this function)
+  case JOY_UP:
+       ^
+../example/src/hid_keyboard.c:91:7: error: 'JOY_DOWN' undeclared (first use in this function)
+  case JOY_DOWN:
+       ^
+../example/src/hid_keyboard.c: In function 'Keyboard_init':
+../example/src/hid_keyboard.c:177:2: warning: implicit declaration of function 'Board_Joystick_Init' [-Wimplicit-function-declaration]
+  Board_Joystick_Init();
+  ^
+make: *** [example/src/hid_keyboard.o] Error 1
+
+18:15:35 Build Finished (took 467ms)
+

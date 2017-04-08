@@ -1,0 +1,51 @@
+18:15:29 **** Build of configuration Debug for project usbd_lib_composite ****
+make -r all 
+Building file: ../example/src/cdc_vcom.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\usbd_lib_composite\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc\usbd" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/cdc_vcom.d" -MT"example/src/cdc_vcom.o" -MT"example/src/cdc_vcom.d" -o "example/src/cdc_vcom.o" "../example/src/cdc_vcom.c"
+Finished building: ../example/src/cdc_vcom.c
+ 
+Building file: ../example/src/composite_main.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\usbd_lib_composite\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc\usbd" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/composite_main.d" -MT"example/src/composite_main.o" -MT"example/src/composite_main.d" -o "example/src/composite_main.o" "../example/src/composite_main.c"
+../example/src/composite_main.c: In function 'main':
+../example/src/composite_main.c:187:16: warning: pointer targets in passing argument 1 of 'vcom_write' differ in signedness [-Wpointer-sign]
+     vcom_write("Hello World!!\r\n", 15);
+                ^
+In file included from ../example/src/composite_main.c:37:0:
+C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\usbd_lib_composite\example\inc/cdc_vcom.h:117:10: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ uint32_t vcom_write (uint8_t *pBuf, uint32_t buf_len);
+          ^
+Finished building: ../example/src/composite_main.c
+ 
+Building file: ../example/src/hid_mouse.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\usbd_lib_composite\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc\usbd" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/hid_mouse.d" -MT"example/src/hid_mouse.o" -MT"example/src/hid_mouse.d" -o "example/src/hid_mouse.o" "../example/src/hid_mouse.c"
+../example/src/hid_mouse.c: In function 'Mouse_UpdateReport':
+../example/src/hid_mouse.c:85:28: warning: implicit declaration of function 'Joystick_GetStatus' [-Wimplicit-function-declaration]
+  uint8_t joystick_status = Joystick_GetStatus();
+                            ^
+../example/src/hid_mouse.c:89:7: error: 'JOY_PRESS' undeclared (first use in this function)
+  case JOY_PRESS:
+       ^
+../example/src/hid_mouse.c:89:7: note: each undeclared identifier is reported only once for each function it appears in
+../example/src/hid_mouse.c:93:7: error: 'JOY_LEFT' undeclared (first use in this function)
+  case JOY_LEFT:
+       ^
+../example/src/hid_mouse.c:97:7: error: 'JOY_RIGHT' undeclared (first use in this function)
+  case JOY_RIGHT:
+       ^
+../example/src/hid_mouse.c:101:7: error: 'JOY_UP' undeclared (first use in this function)
+  case JOY_UP:
+       ^
+../example/src/hid_mouse.c:105:7: error: 'JOY_DOWN' undeclared (first use in this function)
+  case JOY_DOWN:
+       ^
+../example/src/hid_mouse.c: In function 'Mouse_Init':
+../example/src/hid_mouse.c:180:2: warning: implicit declaration of function 'Board_Joystick_Init' [-Wimplicit-function-declaration]
+  Board_Joystick_Init();
+  ^
+make: *** [example/src/hid_mouse.o] Error 1
+
+18:15:31 Build Finished (took 1s.513ms)
+

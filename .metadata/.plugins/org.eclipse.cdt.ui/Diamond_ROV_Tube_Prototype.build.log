@@ -1,0 +1,34 @@
+18:13:51 **** Build of configuration Debug for project Diamond_ROV_Tube_Prototype ****
+make -r all 
+Building file: ../src/Diamond_ROV_Tube_Prototype.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__USE_CMSIS_DSPLIB=CMSIS_DSPLIB_CM3 -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\CMSIS_DSPLIB_CM3\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/Diamond_ROV_Tube_Prototype.d" -MT"src/Diamond_ROV_Tube_Prototype.o" -MT"src/Diamond_ROV_Tube_Prototype.d" -o "src/Diamond_ROV_Tube_Prototype.o" "../src/Diamond_ROV_Tube_Prototype.c"
+../src/Diamond_ROV_Tube_Prototype.c: In function 'main':
+../src/Diamond_ROV_Tube_Prototype.c:19:6: warning: variable 'state' set but not used [-Wunused-but-set-variable]
+  int state[] = {0, 0, 0};
+      ^
+Finished building: ../src/Diamond_ROV_Tube_Prototype.c
+ 
+Building file: ../src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_LPCOPEN -D__USE_CMSIS_DSPLIB=CMSIS_DSPLIB_CM3 -D__LPC17XX__ -D__REDLIB__ -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\CMSIS_DSPLIB_CM3\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/sysinit.d" -MT"src/sysinit.o" -MT"src/sysinit.d" -o "src/sysinit.o" "../src/sysinit.c"
+Finished building: ../src/sysinit.c
+ 
+Building target: Diamond_ROV_Tube_Prototype.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug" -L"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug" -L"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\CMSIS_DSPLIB_CM3\lib" -Xlinker -Map="Diamond_ROV_Tube_Prototype.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "Diamond_ROV_Tube_Prototype_Debug.ld" -o "Diamond_ROV_Tube_Prototype.axf"  ./src/Diamond_ROV_Tube_Prototype.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o ./src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x -lCMSIS_DSPLIB_CM3
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:        3928 B       512 KB      0.75%
+        RamLoc32:           4 B        32 KB      0.01%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: Diamond_ROV_Tube_Prototype.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "Diamond_ROV_Tube_Prototype.axf"; # arm-none-eabi-objcopy -v -O binary "Diamond_ROV_Tube_Prototype.axf" "Diamond_ROV_Tube_Prototype.bin" ; # checksum -p LPC1769 -d "Diamond_ROV_Tube_Prototype.bin";
+   text	   data	    bss	    dec	    hex	filename
+   3928	      0	      4	   3932	    f5c	Diamond_ROV_Tube_Prototype.axf
+ 
+
+18:13:53 Build Finished (took 1s.485ms)
+

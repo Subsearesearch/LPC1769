@@ -1,0 +1,31 @@
+18:15:18 **** Build of configuration Debug for project ucos_iii_blinky ****
+make -r all 
+Building file: ../ucos_iii/src/cpu_bsp.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\ucos_iii_blinky\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\ucos_iii_blinky\ucos_iii\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"ucos_iii/src/cpu_bsp.d" -MT"ucos_iii/src/cpu_bsp.o" -MT"ucos_iii/src/cpu_bsp.d" -o "ucos_iii/src/cpu_bsp.o" "../ucos_iii/src/cpu_bsp.c"
+Finished building: ../ucos_iii/src/cpu_bsp.c
+ 
+Building file: ../example/src/sysinit.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\ucos_iii_blinky\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\ucos_iii_blinky\ucos_iii\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
+Finished building: ../example/src/sysinit.c
+ 
+Building file: ../example/src/ucos_iii_blinky.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\ucos_iii_blinky\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\ucos_iii_blinky\ucos_iii\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/ucos_iii_blinky.d" -MT"example/src/ucos_iii_blinky.o" -MT"example/src/ucos_iii_blinky.d" -o "example/src/ucos_iii_blinky.o" "../example/src/ucos_iii_blinky.c"
+Finished building: ../example/src/ucos_iii_blinky.c
+ 
+Building target: ucos_iii_blinky.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug" -L"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="ucos_iii_blinky.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "ucos_iii_blinky_Debug.ld" -o "ucos_iii_blinky.axf"  ./ucos_iii/src/cpu_a.o ./ucos_iii/src/cpu_bsp.o ./ucos_iii/src/cpu_c.o ./ucos_iii/src/cpu_core.o ./ucos_iii/src/lib_ascii.o ./ucos_iii/src/lib_math.o ./ucos_iii/src/lib_mem.o ./ucos_iii/src/lib_str.o ./ucos_iii/src/os_cfg_app.o ./ucos_iii/src/os_core.o ./ucos_iii/src/os_cpu_a.o ./ucos_iii/src/os_cpu_c.o ./ucos_iii/src/os_dbg.o ./ucos_iii/src/os_flag.o ./ucos_iii/src/os_int.o ./ucos_iii/src/os_mem.o ./ucos_iii/src/os_msg.o ./ucos_iii/src/os_mutex.o ./ucos_iii/src/os_pend_multi.o ./ucos_iii/src/os_prio.o ./ucos_iii/src/os_q.o ./ucos_iii/src/os_sem.o ./ucos_iii/src/os_stat.o ./ucos_iii/src/os_task.o ./ucos_iii/src/os_tick.o ./ucos_iii/src/os_time.o ./ucos_iii/src/os_tmr.o ./ucos_iii/src/os_var.o  ./example/src/cr_ucos_iii_startup_lpc17xx40xx.o ./example/src/sysinit.o ./example/src/ucos_iii_blinky.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: ucos_iii_blinky.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "ucos_iii_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "ucos_iii_blinky.axf" "ucos_iii_blinky.bin" ; # checksum -p LPC1769 -d "ucos_iii_blinky.bin";
+   text	   data	    bss	    dec	    hex	filename
+  27680	      0	   9920	  37600	   92e0	ucos_iii_blinky.axf
+ 
+
+18:15:22 Build Finished (took 3s.790ms)
+

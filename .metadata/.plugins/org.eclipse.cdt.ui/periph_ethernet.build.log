@@ -1,0 +1,16 @@
+14:37:31 **** Incremental Build of configuration Debug for project periph_ethernet ****
+make -r all 
+Building target: periph_ethernet.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug" -L"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="periph_ethernet.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "periph_ethernet_Debug.ld" -o "periph_ethernet.axf"  ./example/src/cr_startup_lpc175x_6x.o ./example/src/enet.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
+Finished building target: periph_ethernet.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "periph_ethernet.axf"; # arm-none-eabi-objcopy -v -O binary "periph_ethernet.axf" "periph_ethernet.bin" ; # checksum -p LPC1769 -d "periph_ethernet.bin";
+   text	   data	    bss	    dec	    hex	filename
+  17808	     16	    372	  18196	   4714	periph_ethernet.axf
+ 
+
+14:37:32 Build Finished (took 662ms)
+
