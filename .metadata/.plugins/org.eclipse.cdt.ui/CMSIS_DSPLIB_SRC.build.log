@@ -1,6 +1,6 @@
-18:13:27 **** Build of configuration CMSIS_DSPLIB_CM4 for project CMSIS_DSPLIB_SRC ****
+17:22:19 **** Build of configuration CMSIS_DSPLIB_CM4 for project CMSIS_DSPLIB_SRC ****
 make -r all 
 make: Nothing to be done for `all'.
 
-18:13:37 Build Finished (took 9s.436ms)
+17:22:27 Build Finished (took 8s.247ms)
 

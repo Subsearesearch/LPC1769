@@ -1,4 +1,4 @@
-18:15:18 **** Build of configuration Debug for project ucos_iii_blinky ****
+17:24:29 **** Build of configuration Debug for project ucos_iii_blinky ****
 make -r all 
 Building file: ../ucos_iii/src/cpu_bsp.c
 Invoking: MCU C Compiler
@@ -24,8 +24,8 @@ make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "ucos_iii_blinky.axf"; # arm-none-eabi-objcopy -v -O binary "ucos_iii_blinky.axf" "ucos_iii_blinky.bin" ; # checksum -p LPC1769 -d "ucos_iii_blinky.bin";
    text	   data	    bss	    dec	    hex	filename
-  27680	      0	   9920	  37600	   92e0	ucos_iii_blinky.axf
+  27760	      0	   9920	  37680	   9330	ucos_iii_blinky.axf
  
 
-18:15:22 Build Finished (took 3s.790ms)
+17:24:34 Build Finished (took 5s.85ms)
 

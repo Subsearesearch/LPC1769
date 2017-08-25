@@ -2,22 +2,30 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="mac" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="LVT" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
-		<item value="false" key="wholeword"/>
+		<item value="true" key="wholeword"/>
 		<list key="findhistory">
-			<item value="mac"/>
-			<item value="debug"/>
-			<item value="uart"/>
-			<item value="rx"/>
-			<item value="EMR"/>
-			<item value="PCONP"/>
-			<item value="MCR"/>
-			<item value="SEL"/>
+			<item value="BVT"/>
+			<item value="FVT"/>
+			<item value="bvt"/>
+			<item value="fvt"/>
+			<item value="blt"/>
+			<item value="brlt"/>
+			<item value="brt"/>
+			<item value="flt"/>
 		</list>
 		<list key="replacehistory">
+			<item value="LVT"/>
+			<item value="RVT"/>
+			<item value="thruster[BVT]"/>
+			<item value="thruster[FVT]"/>
+			<item value="thruster[BLT]"/>
+			<item value="thruster[BRT]"/>
+			<item value="thruster[FLT]"/>
+			<item value="thruster[FRT]"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

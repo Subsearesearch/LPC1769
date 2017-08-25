@@ -20,9 +20,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -44,9 +41,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -72,9 +66,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -96,9 +87,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -124,9 +112,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -148,9 +133,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -176,9 +158,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -200,9 +179,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -228,9 +204,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -252,9 +225,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -280,9 +250,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -304,9 +271,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -332,9 +296,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -356,9 +317,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -384,9 +342,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -408,9 +363,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -436,9 +388,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -460,9 +409,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -488,9 +434,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -512,9 +455,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -540,9 +480,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -564,9 +501,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -592,9 +526,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -616,9 +547,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -644,9 +572,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -668,9 +593,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -696,9 +618,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -720,9 +639,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -748,9 +664,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -772,9 +685,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -800,9 +710,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -824,9 +731,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -852,9 +756,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -876,9 +777,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -904,9 +802,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -928,9 +823,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -956,9 +848,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -980,9 +869,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -1008,9 +894,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -1032,9 +915,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
@@ -1060,9 +940,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -1086,9 +963,6 @@
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>
 						<entry kind="macro" name="DEBUG" value=""/>
 						<entry kind="macro" name="__CODE_RED" value=""/>
@@ -1110,9 +984,6 @@
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="includePath" name="/lpc_board_nxp_lpcxpresso_1769/inc">
-							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
-						</entry>
-						<entry kind="includePath" name="/CMSIS_DSPLIB_CM3/inc">
 							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
 						</entry>
 						<entry kind="macro" name="CORE_M3" value=""/>

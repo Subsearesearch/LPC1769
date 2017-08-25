@@ -1,4 +1,4 @@
-18:15:32 **** Build of configuration Debug for project usbd_lib_hid_generic ****
+17:24:46 **** Build of configuration Debug for project usbd_lib_hid_generic ****
 make -r all 
 Building file: ../example/src/hid_generic.c
 Invoking: MCU C Compiler
@@ -24,8 +24,8 @@ make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "usbd_lib_hid_generic.axf"; # arm-none-eabi-objcopy -v -O binary "usbd_lib_hid_generic.axf" "usbd_lib_hid_generic.bin" ; # checksum -p LPC1769 -d "usbd_lib_hid_generic.bin";
    text	   data	    bss	    dec	    hex	filename
-  11512	     48	    348	  11908	   2e84	usbd_lib_hid_generic.axf
+  11592	     48	    348	  11988	   2ed4	usbd_lib_hid_generic.axf
  
 
-18:15:34 Build Finished (took 2s.146ms)
+17:24:48 Build Finished (took 2s.464ms)
 

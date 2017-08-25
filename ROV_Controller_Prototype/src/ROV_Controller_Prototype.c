@@ -18,12 +18,12 @@
 #define lightBlueT	4
 #define darkBlueT	5
 
-#define FRT	orangeT
-#define FLT	whiteT
-#define BRT	redT
-#define BLT	darkBlueT
-#define FVT	greenT
-#define BVT	lightBlueT
+#define FRT	orangeT		// Front Right Thruster
+#define FLT	whiteT		// Front Left Thruster
+#define BRT	redT		// Back Right Thruster
+#define BLT	darkBlueT	// Back Left Thruster
+#define RVT	greenT		// Front Vertical Thruster
+#define LVT	lightBlueT	// Back Vertical Thruster
 
 //Command value indexes.
 #define LX	0
@@ -47,13 +47,14 @@
 #define IRQ_SELECTION 	UART3_IRQn
 #define HANDLER_NAME 	UART3_IRQHandler
 
+#define MAXPW	200u
+
 uint16_t movement[] = {0, 0, 0, 0, 0, 0};
 uint16_t button = 0;
 uint32_t thruster[6];
 uint8_t byteIn;
-uint8_t byteIndex;
+uint8_t byteIndex = 0xFF;
 int bytes;
-uint32_t timerFreq;
 
 char start[] = "Hello to Raspberry Pi from LPC1769.\r\n\r\nReady to run.\r\n\r\n";
 
@@ -97,16 +98,18 @@ void InitPWM(void) {
 
 	//Set pulseWidth to 1500us.
 	for (uint8_t i = 1; i <= 6; i++) {
-//		Chip_PWM_SetPulseWidth(LPC_PWM1, i, 1500);
 		Chip_PWM_SetPulseWidth(LPC_PWM1, i, LPC_PWM1->MR0 - 1500);
 	}
 
+	//Setup PWM for single edge control mode.
 	for (uint8_t i = 1; i <= 6; i++) {
 		Chip_PWM_SetControlMode(LPC_PWM1, i, PWM_SINGLE_EDGE_CONTROL_MODE, PWM_OUT_ENABLED);
 	}
 
-	LPC_PWM1->TCR |= 0b1001;
+	//Counter enable and PWM enable.
+	LPC_PWM1->TCR |= (1<<0) | (1<<3);
 
+	//Reset counter.
 	Chip_PWM_Reset(LPC_PWM1);
 }
 
@@ -186,44 +189,10 @@ int main(void) {
 	Chip_UART_SendRB(UART_SELECTION, &txring, start, sizeof(start) - 1);
 
 	//Turn on LED to indicate that the uC is alive.
-	Board_LED_Set(REDLED, TRUE);
+	Board_LED_Set(BLUELED, TRUE);
 
 	//Wait until a button is pressed.
 	while (button == 0) {
-
-		//Read data from UART.
-		bytes = Chip_UART_ReadRB(UART_SELECTION, &rxring, &byteIn , 1);
-
-		//Check to see if anything was sent.
-		if (bytes > 0) {
-			//Read button and joystick.
-			if (byteIndex < 12) {
-				if ((byteIndex % 2) == 0) {
-					movement[byteIndex>>1] = (uint16_t) byteIn<<8;
-				} else {
-					movement[byteIndex>>1] |= (uint16_t) byteIn;
-				}
-			} else {
-				//Get button values.
-				if ((byteIndex % 2) == 0) {
-					button = (uint16_t) byteIn<<8;
-				} else {
-					button |= (uint16_t) byteIn;
-				}
-			}
-			byteIndex++;
-
-			//There is a total of 14 bytes in a command.
-			if (byteIndex >= 14) {
-				byteIndex = 0;
-			}
-		}
-	}
-
-	Board_LED_Set(REDLED, FALSE);
-
-	//Main loop
-	while (1) {
 
 		//Get command if available.
 		//Read data from UART
@@ -231,51 +200,185 @@ int main(void) {
 
 		//Check to see if anything was sent.
 		if (bytes > 0) {
-			//Read button and joystick.
-			if (byteIndex < 12) {
-				if ((byteIndex % 2) == 0) {
-					movement[byteIndex>>1] = (uint16_t) byteIn<<8;
+
+			//Search for '*' to regain position.
+			if (byteIndex == 0xFF) {
+				//Wait until the UART reads a '*'.
+				if (byteIn == '*') {
+					byteIndex = 0;
+					Board_LED_Set(REDLED, FALSE);
 				} else {
-					movement[byteIndex>>1] |= (uint16_t) byteIn;
+					Board_LED_Set(REDLED, TRUE);
 				}
 			} else {
-				//Get button values.
-				if ((byteIndex % 2) == 0) {
-					button = (uint16_t) byteIn<<8;
+				//Read button and joystick.
+				if (byteIndex < 12) {
+					if ((byteIndex % 2) == 0) {
+						movement[byteIndex>>1] = (uint16_t) byteIn<<8;
+					} else {
+						movement[byteIndex>>1] |= (uint16_t) byteIn;
+					}
 				} else {
-					button |= (uint16_t) byteIn;
+					//Get button values.
+					if ((byteIndex % 2) == 0) {
+						button = (uint16_t) byteIn<<8;
+					} else {
+						button |= (uint16_t) byteIn;
+					}
+				}
+				byteIndex++;
+
+				//There is a total of 15 bytes in a command but byteIndex = 0xFF when the uC finds the '*'.
+				if (byteIndex >= 14) {
+					byteIndex = 0xFF;
 				}
 			}
-			byteIndex++;
+		}
+	}
 
-			//There is a total of 14 bytes in a command.
-			if (byteIndex >= 14) {
-				byteIndex = 0;
+	Board_LED_Set(BLUELED, FALSE);
+	Board_LED_Set(GREENLED, TRUE);
+
+	//Main loop
+	while (1) {
+
+		/* ROV command structure
+		 * 0 '*' (0x2A)		Sync character
+		 * 1 TX MSB
+		 * 2 TX LSB
+		 * 3 TY MSB
+		 * 4 TY LSB
+		 * 5 TZ MSB
+		 * 6 TZ LSB
+		 * 7 RX MSB
+		 * 8 RX LSB
+		 * 9 RY MSB
+		 * A RY LSB
+		 * B RZ MSB
+		 * C RZ LSB
+		 * D BTN MSB
+		 * E BTN LSB
+		 *
+		 * Tn = translation axis 'n'
+		 * Rn = rotation axis 'n'
+		 * BTN = buttons
+		 *
+		 * Rotation uses the left-hand rule.
+		 * X = right/left, right is positive.
+		 * Y = forward/back, forward is positive.
+		 * Z = up/down, up is positive.
+		 */
+
+		//Get command if available.
+		//Read data from UART
+		bytes = Chip_UART_ReadRB(UART_SELECTION, &rxring, &byteIn , 1);
+
+		//Check to see if anything was sent.
+		if (bytes > 0) {
+
+			//Search for '*' to regain position.
+			if (byteIndex == 0xFF) {
+				//Wait until the UART reads a '*'.
+				if (byteIn == '*') {
+					byteIndex = 0;
+					Board_LED_Set(REDLED, FALSE);
+				} else {
+					Board_LED_Set(REDLED, TRUE);
+				}
+			} else {
+				//Read button and joystick.
+				if (byteIndex < 12) {
+					if ((byteIndex % 2) == 0) {
+						movement[byteIndex>>1] = (uint16_t) byteIn<<8;
+					} else {
+						movement[byteIndex>>1] |= (uint16_t) byteIn;
+					}
+				} else {
+					//Get button values.
+					if ((byteIndex % 2) == 0) {
+						button = (uint16_t) byteIn<<8;
+					} else {
+						button |= (uint16_t) byteIn;
+					}
+				}
+				byteIndex++;
+
+				//There is a total of 15 bytes in a command but byteIndex = 0xFF when the uC finds the '*'.
+				if (byteIndex >= 14) {
+					byteIndex = 0xFF;
+				}
 			}
 		}
 
+//		//Check to see if anything was sent.
+//		if (bytes > 0) {
+//			//Read button and joystick.
+//			if (byteIndex < 12) {
+//				if ((byteIndex % 2) == 0) {
+//					movement[byteIndex>>1] = (uint16_t) byteIn<<8;
+//				} else {
+//					movement[byteIndex>>1] |= (uint16_t) byteIn;
+//				}
+//			} else {
+//				//Get button values.
+//				if ((byteIndex % 2) == 0) {
+//					button = (uint16_t) byteIn<<8;
+//				} else {
+//					button |= (uint16_t) byteIn;
+//				}
+//			}
+//			byteIndex++;
+//
+//			//There is a total of 14 bytes in a command.
+//			if (byteIndex >= 14) {
+//				byteIndex = 0;
+//			}
+//		}
+//
+//		//convert data.
+//		thruster[FRT] = 1500u + multDiv(multDiv((neg(to32(movement[LX])) + to32(movement[LY]) + neg(to32(movement[RZ]))), 200u, '*'), (0x10000u * 3u), '/');
+//		thruster[FLT] = 1500u + multDiv(multDiv((to32(movement[LX]) + to32(movement[LY]) + to32(movement[RZ])), 200u, '*'), (0x10000u * 3u), '/');
+//		thruster[BRT] = 1500u + multDiv(multDiv((to32(movement[LX]) + to32(movement[LY]) + neg(to32(movement[RZ]))), 200u, '*'), (0x10000u * 3u), '/');
+//		thruster[BLT] = 1500u + multDiv(multDiv((neg(to32(movement[LX])) + to32(movement[LY]) + to32(movement[RZ])), 200u, '*'), (0x10000u * 3u), '/');
+//
+//		thruster[RVT] = 1500u + neg(multDiv(multDiv((neg(to32(movement[LZ])) + to32(movement[RX])), 200u, '*'), (0x10000u * 2u), '/'));
+//		thruster[LVT] = 1500u + neg(multDiv(multDiv((neg(to32(movement[LZ])) + neg(to32(movement[RX]))), 200u, '*'), (0x10000u * 2u), '/'));
+
 		//convert data.
-		thruster[FRT] = 1500u + multDiv(multDiv((neg(to32(movement[LX])) + to32(movement[LY]) + neg(to32(movement[RZ]))), 200u, '*'), (0x10000u * 3u), '/');
-		thruster[FLT] = 1500u + multDiv(multDiv((to32(movement[LX]) + to32(movement[LY]) + to32(movement[RZ])), 200u, '*'), (0x10000u * 3u), '/');
-		thruster[BRT] = 1500u + multDiv(multDiv((to32(movement[LX]) + neg(to32(movement[LY])) + neg(to32(movement[RZ]))), 200u, '*'), (0x10000u * 3u), '/');
-		thruster[BLT] = 1500u + multDiv(multDiv((neg(to32(movement[LX])) + neg(to32(movement[LY])) + to32(movement[RZ])), 200u, '*'), (0x10000u * 3u), '/');
-		thruster[FVT] = 1500u + multDiv(multDiv((neg(to32(movement[LZ])) + to32(movement[RX])), 200u, '*'), (0x10000u * 2u), '/');
-		thruster[BVT] = 1500u + multDiv(multDiv((neg(to32(movement[LZ])) + neg(to32(movement[RX]))), 200u, '*'), (0x10000u * 2u), '/');
+		thruster[FRT] = 1500u + multDiv(multDiv((neg(to32(movement[LX])) + to32(movement[LY]) + neg(to32(movement[RZ]))), MAXPW, '*'), (0x8000u), '/');
+		thruster[FLT] = 1500u + multDiv(multDiv((to32(movement[LX]) + to32(movement[LY]) + to32(movement[RZ])), MAXPW, '*'), (0x8000u), '/');
+		thruster[BRT] = 1500u + multDiv(multDiv((to32(movement[LX]) + to32(movement[LY]) + neg(to32(movement[RZ]))), MAXPW, '*'), (0x8000u), '/');
+		thruster[BLT] = 1500u + multDiv(multDiv((neg(to32(movement[LX])) + to32(movement[LY]) + to32(movement[RZ])), MAXPW, '*'), (0x8000u), '/');
+
+		thruster[RVT] = 1500u + neg(multDiv(multDiv((neg(to32(movement[LZ])) + to32(movement[RY])), MAXPW, '*'), (0x8000u), '/'));
+		thruster[LVT] = 1500u + neg(multDiv(multDiv((neg(to32(movement[LZ])) + neg(to32(movement[RY]))), MAXPW, '*'), (0x8000u), '/'));
+
+		//Check and correct for over-current.
+		if (thruster[FRT] > 1700) thruster[FRT] = 1500u + MAXPW;
+		if (thruster[FRT] < 1300) thruster[FRT] = 1500u - MAXPW;
+
+		if (thruster[FLT] > 1700) thruster[FLT] = 1500u + MAXPW;
+		if (thruster[FLT] < 1300) thruster[FLT] = 1500u - MAXPW;
+
+		if (thruster[BRT] > 1700) thruster[BRT] = 1500u + MAXPW;
+		if (thruster[BRT] < 1300) thruster[BRT] = 1500u - MAXPW;
+
+		if (thruster[BLT] > 1700) thruster[BLT] = 1500u + MAXPW;
+		if (thruster[BLT] < 1300) thruster[BLT] = 1500u - MAXPW;
+
+		if (thruster[RVT] > 1700) thruster[RVT] = 1500u + MAXPW;
+		if (thruster[RVT] < 1300) thruster[RVT] = 1500u - MAXPW;
+
+		if (thruster[LVT] > 1700) thruster[LVT] = 1500u + MAXPW;
+		if (thruster[LVT] < 1300) thruster[LVT] = 1500u - MAXPW;
 
 		/*	Update PWM to ESCs.	*/
-//		Chip_PWM_SetPulseWidth(LPC_PWM1, FRT + 1, thruster[FRT]);
-//		Chip_PWM_SetPulseWidth(LPC_PWM1, FLT + 1, thruster[FLT]);
-//		Chip_PWM_SetPulseWidth(LPC_PWM1, BRT + 1, thruster[BRT]);
-//		Chip_PWM_SetPulseWidth(LPC_PWM1, BLT + 1, thruster[BLT]);
-//		Chip_PWM_SetPulseWidth(LPC_PWM1, FVT + 1, thruster[FVT]);
-//		Chip_PWM_SetPulseWidth(LPC_PWM1, BVT + 1, thruster[BVT]);
-
 		Chip_PWM_SetPulseWidth(LPC_PWM1, FRT + 1, LPC_PWM1->MR0 - thruster[FRT]);
 		Chip_PWM_SetPulseWidth(LPC_PWM1, FLT + 1, LPC_PWM1->MR0 - thruster[FLT]);
 		Chip_PWM_SetPulseWidth(LPC_PWM1, BRT + 1, LPC_PWM1->MR0 - thruster[BRT]);
 		Chip_PWM_SetPulseWidth(LPC_PWM1, BLT + 1, LPC_PWM1->MR0 - thruster[BLT]);
-		Chip_PWM_SetPulseWidth(LPC_PWM1, FVT + 1, LPC_PWM1->MR0 - thruster[FVT]);
-		Chip_PWM_SetPulseWidth(LPC_PWM1, BVT + 1, LPC_PWM1->MR0 - thruster[BVT]);
+		Chip_PWM_SetPulseWidth(LPC_PWM1, RVT + 1, LPC_PWM1->MR0 - thruster[RVT]);
+		Chip_PWM_SetPulseWidth(LPC_PWM1, LVT + 1, LPC_PWM1->MR0 - thruster[LVT]);
 
 		//Wait for interrupt.
 		__WFI();

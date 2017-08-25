@@ -1,4 +1,4 @@
-18:15:35 **** Build of configuration Debug for project usbd_lib_hid_keyboard ****
+17:24:50 **** Build of configuration Debug for project usbd_lib_hid_keyboard ****
 make -r all 
 Building file: ../example/src/hid_keyboard.c
 Invoking: MCU C Compiler
@@ -29,5 +29,5 @@ arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I
   ^
 make: *** [example/src/hid_keyboard.o] Error 1
 
-18:15:35 Build Finished (took 467ms)
+17:24:50 Build Finished (took 533ms)
 

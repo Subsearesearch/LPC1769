@@ -1,4 +1,4 @@
-18:15:06 **** Build of configuration Debug for project periph_ssp ****
+17:24:14 **** Build of configuration Debug for project periph_ssp ****
 make -r all 
 Building file: ../example/src/ssp.c
 Invoking: MCU C Compiler
@@ -19,8 +19,8 @@ make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "periph_ssp.axf"; # arm-none-eabi-objcopy -v -O binary "periph_ssp.axf" "periph_ssp.bin" ; # checksum -p LPC1769 -d "periph_ssp.bin";
    text	   data	    bss	    dec	    hex	filename
-  19192	    548	    892	  20632	   5098	periph_ssp.axf
+  19272	    548	    892	  20712	   50e8	periph_ssp.axf
  
 
-18:15:07 Build Finished (took 1s.575ms)
+17:24:16 Build Finished (took 1s.784ms)
 

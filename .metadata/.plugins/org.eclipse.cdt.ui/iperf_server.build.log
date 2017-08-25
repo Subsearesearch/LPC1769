@@ -1,29 +1,5 @@
-19:06:21 **** Build of configuration Debug for project iperf_server ****
+17:22:32 **** Build of configuration Debug for project iperf_server ****
 make -r all 
-Building file: ../lwip/src/arch/lpc17xx_40xx_emac.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\lwip\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\lwip\inc\ipv4" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"lwip/src/arch/lpc17xx_40xx_emac.d" -MT"lwip/src/arch/lpc17xx_40xx_emac.o" -MT"lwip/src/arch/lpc17xx_40xx_emac.d" -o "lwip/src/arch/lpc17xx_40xx_emac.o" "../lwip/src/arch/lpc17xx_40xx_emac.c"
-Finished building: ../lwip/src/arch/lpc17xx_40xx_emac.c
- 
-Building file: ../lwip/src/arch/lpc17xx_40xx_systick_arch.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\lwip\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\lwip\inc\ipv4" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"lwip/src/arch/lpc17xx_40xx_systick_arch.d" -MT"lwip/src/arch/lpc17xx_40xx_systick_arch.o" -MT"lwip/src/arch/lpc17xx_40xx_systick_arch.d" -o "lwip/src/arch/lpc17xx_40xx_systick_arch.o" "../lwip/src/arch/lpc17xx_40xx_systick_arch.c"
-Finished building: ../lwip/src/arch/lpc17xx_40xx_systick_arch.c
- 
-Building file: ../example/src/main.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\lwip\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\lwip\inc\ipv4" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/main.d" -MT"example/src/main.o" -MT"example/src/main.d" -o "example/src/main.o" "../example/src/main.c"
-../example/src/main.c: In function 'main':
-../example/src/main.c:128:2: warning: implicit declaration of function 'iperf_server_init' [-Wimplicit-function-declaration]
-  iperf_server_init();
-  ^
-Finished building: ../example/src/main.c
- 
-Building file: ../example/src/sysinit.c
-Invoking: MCU C Compiler
-arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\example\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\lwip\inc" -I"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\iperf_server\lwip\inc\ipv4" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"example/src/sysinit.d" -MT"example/src/sysinit.o" -MT"example/src/sysinit.d" -o "example/src/sysinit.o" "../example/src/sysinit.c"
-Finished building: ../example/src/sysinit.c
- 
 Building target: iperf_server.axf
 Invoking: MCU Linker
 arm-none-eabi-gcc -nostdlib -L"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug" -L"C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug" -Xlinker -Map="iperf_server.map" -Xlinker --gc-sections -mcpu=cortex-m3 -mthumb -T "iperf_server_Debug.ld" -o "iperf_server.axf"  ./lwip/src/netif/etharp.o ./lwip/src/netif/ethernetif.o  ./lwip/src/core/ipv4/autoip.o ./lwip/src/core/ipv4/icmp.o ./lwip/src/core/ipv4/igmp.o ./lwip/src/core/ipv4/inet.o ./lwip/src/core/ipv4/inet_chksum.o ./lwip/src/core/ipv4/ip.o ./lwip/src/core/ipv4/ip_addr.o ./lwip/src/core/ipv4/ip_frag.o  ./lwip/src/core/def.o ./lwip/src/core/dhcp.o ./lwip/src/core/dns.o ./lwip/src/core/init.o ./lwip/src/core/mem.o ./lwip/src/core/memp.o ./lwip/src/core/netif.o ./lwip/src/core/pbuf.o ./lwip/src/core/raw.o ./lwip/src/core/stats.o ./lwip/src/core/sys.o ./lwip/src/core/tcp.o ./lwip/src/core/tcp_in.o ./lwip/src/core/tcp_out.o ./lwip/src/core/timers.o ./lwip/src/core/udp.o  ./lwip/src/arch/lpc17xx_40xx_emac.o ./lwip/src/arch/lpc17xx_40xx_systick_arch.o ./lwip/src/arch/lpc_debug.o  ./lwip/src/api/api_lib.o ./lwip/src/api/api_msg.o ./lwip/src/api/err.o ./lwip/src/api/netbuf.o ./lwip/src/api/netdb.o ./lwip/src/api/netifapi.o ./lwip/src/api/sockets.o ./lwip/src/api/tcpip.o  ./example/src/cr_startup_lpc175x_6x.o ./example/src/echo.o ./example/src/iperf_server.o ./example/src/main.o ./example/src/sysinit.o   -llpc_board_nxp_lpcxpresso_1769 -llpc_chip_175x_6x
@@ -36,5 +12,5 @@ arm-none-eabi-size "iperf_server.axf"; # arm-none-eabi-objcopy -v -O binary "ipe
   63920	     16	  29692	  93628	  16dbc	iperf_server.axf
  
 
-19:06:25 Build Finished (took 4s.382ms)
+17:22:35 Build Finished (took 2s.797ms)
 

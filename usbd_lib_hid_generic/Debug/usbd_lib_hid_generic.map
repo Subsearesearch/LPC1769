@@ -434,8 +434,6 @@ Discarded input sections
                 0x00000000       0x2c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_GetPinState
                 0x00000000       0x38 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .text.Chip_GPIO_SetPinDIROutput
-                0x00000000       0x38 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_SetPinDIRInput
                 0x00000000       0x3c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_SetPinDIR
@@ -1549,7 +1547,7 @@ END GROUP
                 0x20084000                __top_RamAHB32 = 0x20084000
                 0x20084000                __top_RAM2 = 0x20084000
 
-.text           0x00000000     0x2cf8
+.text           0x00000000     0x2d48
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -1558,10 +1556,10 @@ END GROUP
                 0x000000cc                . = ALIGN (0x4)
                 0x000000cc                __section_table_start = .
                 0x000000cc                __data_section_table = .
-                0x000000cc        0x4 LONG 0x2cf8 LOADADDR (.data)
+                0x000000cc        0x4 LONG 0x2d48 LOADADDR (.data)
                 0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000d4        0x4 LONG 0x30 SIZEOF (.data)
-                0x000000d8        0x4 LONG 0x2cf8 LOADADDR (.data_RAM2)
+                0x000000d8        0x4 LONG 0x2d48 LOADADDR (.data_RAM2)
                 0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000e4                __data_section_table_end = .
@@ -1650,492 +1648,494 @@ END GROUP
                 0x00000564       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_SetPinState
                 0x0000057c       0x68 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .text.Chip_GPIO_SetPinDIROutput
+                0x000005e4       0x38 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_UART_SendByte
-                0x000005e4       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000061c       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_UART_ConfigData
-                0x00000600       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000638       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_UART_ReadLineStatus
-                0x0000061c       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000654       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.__sys_write
-                0x00000634       0x38 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00000634                __sys_write
+                0x0000066c       0x38 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000066c                __sys_write
  .text.Board_LED_Init
-                0x0000066c       0x44 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x0000066c                Board_LED_Init
+                0x000006a4       0x5c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x000006a4                Board_LED_Init
  .text.Board_UART_Init
-                0x000006b0       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x000006b0                Board_UART_Init
+                0x00000700       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000700                Board_UART_Init
  .text.Board_Debug_Init
-                0x000006c4       0x30 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x000006c4                Board_Debug_Init
+                0x00000714       0x30 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000714                Board_Debug_Init
  .text.Board_UARTPutChar
-                0x000006f4       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x000006f4                Board_UARTPutChar
+                0x00000744       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000744                Board_UARTPutChar
  .text.Board_Init
-                0x00000728       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00000728                Board_Init
+                0x00000778       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000778                Board_Init
  .text.Board_USBD_Init
-                0x0000074c       0x50 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x0000074c                Board_USBD_Init
+                0x0000079c       0x50 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000079c                Board_USBD_Init
  .text.Chip_SYSCTL_SetFLASHAccess
-                0x0000079c       0x30 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x000007ec       0x30 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
  .text.Board_SetupMuxing
-                0x000007cc       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x000007cc                Board_SetupMuxing
+                0x0000081c       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x0000081c                Board_SetupMuxing
  .text.Board_SetupClocking
-                0x000007e8       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x000007e8                Board_SetupClocking
+                0x00000838       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x00000838                Board_SetupClocking
  .text.Board_SystemInit
-                0x000007fc       0x10 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x000007fc                Board_SystemInit
+                0x0000084c       0x10 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x0000084c                Board_SystemInit
  .text.Chip_Clock_IsUSBPLLLocked
-                0x0000080c       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x0000085c       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
  .text.Chip_Clock_IsUSBPLLConnected
-                0x00000830       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x00000880       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
  .text.SystemCoreClockUpdate
-                0x00000854       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
-                0x00000854                SystemCoreClockUpdate
+                0x000008a4       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x000008a4                SystemCoreClockUpdate
  .text.Chip_USB_Init
-                0x0000086c       0x4c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
-                0x0000086c                Chip_USB_Init
+                0x000008bc       0x4c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x000008bc                Chip_USB_Init
  .text.Chip_Clock_IsMainPLLEnabled
-                0x000008b8       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000908       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x000008dc       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000092c       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_FeedPLL
-                0x00000900       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000950       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLSource
-                0x00000934       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000984       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainOscRate
-                0x00000954       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009a4       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetIntOscRate
-                0x00000968       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009b8       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetRTCOscRate
-                0x0000097c       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009cc       0x14 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLInClockRate
-                0x00000990       0x10 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009e0       0x10 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_EnablePLL
-                0x000009a0       0x44 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000009a0                Chip_Clock_EnablePLL
+                0x000009f0       0x44 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009f0                Chip_Clock_EnablePLL
  .text.Chip_Clock_DisablePLL
-                0x000009e4       0x48 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000009e4                Chip_Clock_DisablePLL
+                0x00000a34       0x48 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a34                Chip_Clock_DisablePLL
  .text.Chip_Clock_SetupPLL
-                0x00000a2c       0x5c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000a2c                Chip_Clock_SetupPLL
+                0x00000a7c       0x5c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a7c                Chip_Clock_SetupPLL
  .text.Chip_Clock_EnablePeriphClock
-                0x00000a88       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000a88                Chip_Clock_EnablePeriphClock
+                0x00000ad8       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000ad8                Chip_Clock_EnablePeriphClock
  .text.Chip_Clock_GetCPUClockSource
-                0x00000abc       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000abc                Chip_Clock_GetCPUClockSource
+                0x00000b0c       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000b0c                Chip_Clock_GetCPUClockSource
  .text.Chip_Clock_SetCPUClockDiv
-                0x00000ae0       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000ae0                Chip_Clock_SetCPUClockDiv
+                0x00000b30       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000b30                Chip_Clock_SetCPUClockDiv
  .text.Chip_Clock_GetCPUClockDiv
-                0x00000b00       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000b00                Chip_Clock_GetCPUClockDiv
+                0x00000b50       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000b50                Chip_Clock_GetCPUClockDiv
  .text.Chip_Clock_GetPCLKDiv
-                0x00000b1c       0x8c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000b1c                Chip_Clock_GetPCLKDiv
+                0x00000b6c       0x8c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000b6c                Chip_Clock_GetPCLKDiv
  .text.Chip_Clock_GetSYSCLKRate
-                0x00000ba8       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000ba8                Chip_Clock_GetSYSCLKRate
+                0x00000bf8       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000bf8                Chip_Clock_GetSYSCLKRate
  .text.Chip_Clock_GetMainPLLOutClockRate
-                0x00000bdc       0x54 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000bdc                Chip_Clock_GetMainPLLOutClockRate
+                0x00000c2c       0x54 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000c2c                Chip_Clock_GetMainPLLOutClockRate
  .text.Chip_Clock_GetMainClockRate
-                0x00000c30       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000c30                Chip_Clock_GetMainClockRate
+                0x00000c80       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000c80                Chip_Clock_GetMainClockRate
  .text.Chip_Clock_GetSystemClockRate
-                0x00000c58       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000c58                Chip_Clock_GetSystemClockRate
+                0x00000ca8       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000ca8                Chip_Clock_GetSystemClockRate
  .text.Chip_Clock_GetPeripheralClockRate
-                0x00000c70       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000c70                Chip_Clock_GetPeripheralClockRate
+                0x00000cc0       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000cc0                Chip_Clock_GetPeripheralClockRate
  .text.Chip_IOCON_PinMuxSet
-                0x00000c98       0x38 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000c98                Chip_IOCON_PinMuxSet
+                0x00000ce8       0x38 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000ce8                Chip_IOCON_PinMuxSet
  .text.Chip_IOCON_PinMux
-                0x00000cd0       0x94 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000cd0                Chip_IOCON_PinMux
+                0x00000d20       0x94 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000d20                Chip_IOCON_PinMux
  .text.Chip_IOCON_SetPinMuxing
-                0x00000d64       0x64 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000d64                Chip_IOCON_SetPinMuxing
+                0x00000db4       0x64 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000db4                Chip_IOCON_SetPinMuxing
  .text.Chip_Clock_IsMainPLLEnabled
-                0x00000dc8       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000e18       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLLocked
-                0x00000dec       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000e3c       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x00000e10       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000e60       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_EnableCrystal
-                0x00000e34       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000e84       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsCrystalEnabled
-                0x00000e54       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000ea4       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_SetMainPLLSource
-                0x00000e78       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000ec8       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_SetupXtalClocking
-                0x00000e98       0x90 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
-                0x00000e98                Chip_SetupXtalClocking
+                0x00000ee8       0x90 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000ee8                Chip_SetupXtalClocking
  .text.Chip_UART_SetupFIFOS
-                0x00000f28       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000f78       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_ConfigData
-                0x00000f44       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000f94       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_EnableDivisorAccess
-                0x00000f60       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000fb0       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_DisableDivisorAccess
-                0x00000f80       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000fd0       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_SetDivisorLatches
-                0x00000fa0       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000ff0       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_GetClockIndex
-                0x00000fc8       0x50 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
- .text.Chip_UART_GetClkIndex
                 0x00001018       0x50 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .text.Chip_UART_GetClkIndex
+                0x00001068       0x50 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_Init
-                0x00001068       0x78 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x00001068                Chip_UART_Init
+                0x000010b8       0x78 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x000010b8                Chip_UART_Init
  .text.Chip_UART_TXEnable
-                0x000010e0       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x000010e0                Chip_UART_TXEnable
+                0x00001130       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00001130                Chip_UART_TXEnable
  .text.Chip_UART_TXDisable
-                0x000010f8       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x000010f8                Chip_UART_TXDisable
+                0x00001148       0x18 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00001148                Chip_UART_TXDisable
  .text.Chip_UART_SetBaud
-                0x00001110       0x64 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x00001110                Chip_UART_SetBaud
- .text.EPAdr    0x00001174       0x10 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001174                EPAdr
- .text.hwWrCmd  0x00001184       0x10 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001184                hwWrCmd
+                0x00001160       0x64 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00001160                Chip_UART_SetBaud
+ .text.EPAdr    0x000011c4       0x10 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000011c4                EPAdr
+ .text.hwWrCmd  0x000011d4       0x10 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000011d4                hwWrCmd
  .text.hwWrCmdDat
-                0x00001194       0x16 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001194                hwWrCmdDat
+                0x000011e4       0x16 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000011e4                hwWrCmdDat
  .text.hwWrCmdEP
-                0x000011aa       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x000011aa                hwWrCmdEP
+                0x000011fa       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000011fa                hwWrCmdEP
  .text.hwRdCmdDat
-                0x000011ce       0x12 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x000011ce                hwRdCmdDat
+                0x0000121e       0x12 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x0000121e                hwRdCmdDat
  .text.hwUSB_GetMemSize
-                0x000011e0        0x6 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x000011e0                hwUSB_GetMemSize
- *fill*         0x000011e6        0x2 ff
+                0x00001230        0x6 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x00001230                hwUSB_GetMemSize
+ *fill*         0x00001236        0x2 ff
  .text.hwUSB_Connect
-                0x000011e8       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x000011e8                hwUSB_Connect
+                0x00001238       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x00001238                hwUSB_Connect
  .text.hwUSB_Reset
-                0x00001204       0x30 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001204                hwUSB_Reset
+                0x00001254       0x30 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x00001254                hwUSB_Reset
  .text.hwUSB_WakeUp
-                0x00001234       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001234                hwUSB_WakeUp
+                0x00001284       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x00001284                hwUSB_WakeUp
  .text.hwUSB_WakeUpCfg
-                0x00001254        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001254                hwUSB_WakeUpCfg
- *fill*         0x00001256        0x2 ff
+                0x000012a4        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000012a4                hwUSB_WakeUpCfg
+ *fill*         0x000012a6        0x2 ff
  .text.hwUSB_SetAddress
-                0x00001258       0x30 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001258                hwUSB_SetAddress
+                0x000012a8       0x30 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000012a8                hwUSB_SetAddress
  .text.hwUSB_Init
-                0x00001288       0x84 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001288                hwUSB_Init
+                0x000012d8       0x84 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000012d8                hwUSB_Init
  .text.hwUSB_Configure
-                0x0000130c       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x0000130c                hwUSB_Configure
+                0x0000135c       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x0000135c                hwUSB_Configure
  .text.hwUSB_ConfigEP
-                0x00001340       0x32 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001340                hwUSB_ConfigEP
+                0x00001390       0x32 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x00001390                hwUSB_ConfigEP
  .text.hwUSB_DirCtrlEP
-                0x00001372        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001372                hwUSB_DirCtrlEP
+                0x000013c2        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000013c2                hwUSB_DirCtrlEP
  .text.hwUSB_EnableEP
-                0x00001374       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001374                hwUSB_EnableEP
+                0x000013c4       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000013c4                hwUSB_EnableEP
  .text.hwUSB_DisableEP
-                0x00001398       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001398                hwUSB_DisableEP
+                0x000013e8       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000013e8                hwUSB_DisableEP
  .text.hwUSB_ResetEP
-                0x000013c0       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x000013c0                hwUSB_ResetEP
+                0x00001410       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x00001410                hwUSB_ResetEP
  .text.hwUSB_SetStallEP
-                0x000013e4       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x000013e4                hwUSB_SetStallEP
+                0x00001434       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x00001434                hwUSB_SetStallEP
  .text.hwUSB_ClrStallEP
-                0x0000140c       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x0000140c                hwUSB_ClrStallEP
+                0x0000145c       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x0000145c                hwUSB_ClrStallEP
  .text.hwUSB_EnableEvent
-                0x00001430       0xd8 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001430                hwUSB_EnableEvent
+                0x00001480       0xd8 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x00001480                hwUSB_EnableEvent
  .text.hwUSB_ReadEP
-                0x00001508       0x80 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001508                hwUSB_ReadEP
+                0x00001558       0x80 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x00001558                hwUSB_ReadEP
  .text.hwUSB_ForceFullSpeed
-                0x00001588        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001588                hwUSB_ForceFullSpeed
+                0x000015d8        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000015d8                hwUSB_ForceFullSpeed
  .text.hwUSB_SetTestMode
-                0x0000158a        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x0000158a                hwUSB_SetTestMode
+                0x000015da        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000015da                hwUSB_SetTestMode
  .text.hwUSB_ReadReqEP
-                0x0000158e        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x0000158e                hwUSB_ReadReqEP
+                0x000015de        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000015de                hwUSB_ReadReqEP
  .text.hwUSB_ReadSetupPkt
-                0x00001592        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001592                hwUSB_ReadSetupPkt
- *fill*         0x00001596        0x2 ff
+                0x000015e2        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000015e2                hwUSB_ReadSetupPkt
+ *fill*         0x000015e6        0x2 ff
  .text.hwUSB_WriteEP
-                0x00001598       0x44 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x00001598                hwUSB_WriteEP
+                0x000015e8       0x44 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x000015e8                hwUSB_WriteEP
  .text.hwUSB_ISR
-                0x000015dc      0x1a0 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
-                0x000015dc                hwUSB_ISR
+                0x0000162c      0x1a0 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+                0x0000162c                hwUSB_ISR
  .text.USB_ReqGetConfiguration
-                0x0000177c       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x0000177c                USB_ReqGetConfiguration
+                0x000017cc       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x000017cc                USB_ReqGetConfiguration
  .text.USBD_virt_to_phys
-                0x0000179c        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x0000179c                USBD_virt_to_phys
+                0x000017ec        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x000017ec                USBD_virt_to_phys
  .text.USBD_cache_flush
-                0x0000179e        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x0000179e                USBD_cache_flush
+                0x000017ee        0x2 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x000017ee                USBD_cache_flush
  .text.USB_ReqGetStatus
-                0x000017a0       0x8c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x000017a0                USB_ReqGetStatus
+                0x000017f0       0x8c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x000017f0                USB_ReqGetStatus
  .text.USB_ReqGetDescriptor
-                0x0000182c       0x84 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x0000182c                USB_ReqGetDescriptor
+                0x0000187c       0x84 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x0000187c                USB_ReqGetDescriptor
  .text.USB_ReqGetInterface
-                0x000018b0       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x000018b0                USB_ReqGetInterface
+                0x00001900       0x34 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001900                USB_ReqGetInterface
  .text.USB_ReqSetClrFeature
-                0x000018e4       0xb4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x000018e4                USB_ReqSetClrFeature
+                0x00001934       0xb4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001934                USB_ReqSetClrFeature
  .text.USB_ReqSetConfiguration
-                0x00001998      0x194 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001998                USB_ReqSetConfiguration
+                0x000019e8      0x194 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x000019e8                USB_ReqSetConfiguration
  .text.USB_ReqSetInterface
-                0x00001b2c      0x144 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001b2c                USB_ReqSetInterface
+                0x00001b7c      0x144 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001b7c                USB_ReqSetInterface
  .text.mwUSB_SetupStage
-                0x00001c70        0xa C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001c70                mwUSB_SetupStage
+                0x00001cc0        0xa C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001cc0                mwUSB_SetupStage
  .text.mwUSB_DataInStage
-                0x00001c7a       0x2e C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001c7a                mwUSB_DataInStage
+                0x00001cca       0x2e C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001cca                mwUSB_DataInStage
  .text.mwUSB_DataOutStage
-                0x00001ca8       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001ca8                mwUSB_DataOutStage
+                0x00001cf8       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001cf8                mwUSB_DataOutStage
  .text.mwUSB_StatusInStage
-                0x00001ccc        0xa C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001ccc                mwUSB_StatusInStage
+                0x00001d1c        0xa C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001d1c                mwUSB_StatusInStage
  .text.mwUSB_StatusOutStage
-                0x00001cd6        0xa C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001cd6                mwUSB_StatusOutStage
+                0x00001d26        0xa C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001d26                mwUSB_StatusOutStage
  .text.mwUSB_StallEp0
-                0x00001ce0       0x12 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001ce0                mwUSB_StallEp0
- *fill*         0x00001cf2        0x2 ff
+                0x00001d30       0x12 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001d30                mwUSB_StallEp0
+ *fill*         0x00001d42        0x2 ff
  .text.USB_ReqSetAddress
-                0x00001cf4       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001cf4                USB_ReqSetAddress
+                0x00001d44       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001d44                USB_ReqSetAddress
  .text.USB_InvokeEp0Hdlrs
-                0x00001d18       0x44 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001d18                USB_InvokeEp0Hdlrs
+                0x00001d68       0x44 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001d68                USB_InvokeEp0Hdlrs
  .text.mwUSB_ResetCore
-                0x00001d5c       0x26 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001d5c                mwUSB_ResetCore
- *fill*         0x00001d82        0x2 ff
+                0x00001dac       0x26 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001dac                mwUSB_ResetCore
+ *fill*         0x00001dd2        0x2 ff
  .text.USB_EvtSetupHandler
-                0x00001d84      0x108 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001d84                USB_EvtSetupHandler
+                0x00001dd4      0x108 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001dd4                USB_EvtSetupHandler
  .text.USB_EvtOutHandler
-                0x00001e8c       0x68 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001e8c                USB_EvtOutHandler
+                0x00001edc       0x68 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001edc                USB_EvtOutHandler
  .text.USB_EndPoint0
-                0x00001ef4       0x94 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001ef4                USB_EndPoint0
+                0x00001f44       0x94 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001f44                USB_EndPoint0
  .text.mwUSB_InitCore
-                0x00001f88       0xdc C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00001f88                mwUSB_InitCore
+                0x00001fd8       0xdc C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x00001fd8                mwUSB_InitCore
  .text.mwUSB_RegisterClassHandler
-                0x00002064       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x00002064                mwUSB_RegisterClassHandler
+                0x000020b4       0x28 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x000020b4                mwUSB_RegisterClassHandler
  .text.mwUSB_RegisterEpHandler
-                0x0000208c       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
-                0x0000208c                mwUSB_RegisterEpHandler
+                0x000020dc       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+                0x000020dc                mwUSB_RegisterEpHandler
  .text.mwHID_GetReportDesc
-                0x000020b0       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
-                0x000020b0                mwHID_GetReportDesc
+                0x00002100       0x1c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
+                0x00002100                mwHID_GetReportDesc
  .text.mwHID_GetIdle
-                0x000020cc       0x16 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
-                0x000020cc                mwHID_GetIdle
+                0x0000211c       0x16 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
+                0x0000211c                mwHID_GetIdle
  .text.mwHID_SetIdle
-                0x000020e2       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
-                0x000020e2                mwHID_SetIdle
+                0x00002132       0x24 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
+                0x00002132                mwHID_SetIdle
  .text.mwHID_SetProtocol
-                0x00002106       0x1a C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
-                0x00002106                mwHID_SetProtocol
+                0x00002156       0x1a C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
+                0x00002156                mwHID_SetProtocol
  .text.mwHID_ep0_hdlr
-                0x00002120      0x188 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
-                0x00002120                mwHID_ep0_hdlr
+                0x00002170      0x188 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
+                0x00002170                mwHID_ep0_hdlr
  .text.mwHID_GetMemSize
-                0x000022a8        0x8 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
-                0x000022a8                mwHID_GetMemSize
+                0x000022f8        0x8 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
+                0x000022f8                mwHID_GetMemSize
  .text.mwHID_init
-                0x000022b0      0x174 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
-                0x000022b0                mwHID_init
- .text.__main   0x00002424       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr__main.o)
-                0x00002424                __main
- .text.memcpy   0x00002438        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
-                0x00002438                memcpy
- .text.memset   0x0000243c        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
-                0x0000243c                memset
- .text._initio  0x00002440       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
-                0x00002440                _initio
- .text.setvbuf  0x000024e4       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(setvbuf.o)
-                0x000024e4                setvbuf
+                0x00002300      0x174 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
+                0x00002300                mwHID_init
+ .text.__main   0x00002474       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(_cr__main.o)
+                0x00002474                __main
+ .text.memcpy   0x00002488        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
+                0x00002488                memcpy
+ .text.memset   0x0000248c        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+                0x0000248c                memset
+ .text._initio  0x00002490       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
+                0x00002490                _initio
+ .text.setvbuf  0x00002534       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(setvbuf.o)
+                0x00002534                setvbuf
  .text._deferredlazyseek
-                0x00002524       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
-                0x00002524                _deferredlazyseek
- .text._fdopen  0x00002568       0x6a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fdopen.o)
-                0x00002568                _fdopen
- .text._fflush  0x000025d2       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
-                0x000025d2                _fflush
- *fill*         0x0000262a        0x2 ff
+                0x00002574       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
+                0x00002574                _deferredlazyseek
+ .text._fdopen  0x000025b8       0x6a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fdopen.o)
+                0x000025b8                _fdopen
+ .text._fflush  0x00002622       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
+                0x00002622                _fflush
+ *fill*         0x0000267a        0x2 ff
  .text._Cwritebuf
-                0x0000262c       0x68 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
-                0x0000262c                _Cwritebuf
- .text.malloc   0x00002694       0xc8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00002694                malloc
- .text.free     0x0000275c       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x0000275c                free
+                0x0000267c       0x68 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
+                0x0000267c                _Cwritebuf
+ .text.malloc   0x000026e4       0xc8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x000026e4                malloc
+ .text.free     0x000027ac       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x000027ac                free
  .text._Csys_alloc
-                0x0000278c       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x0000278c                _Csys_alloc
- .text.fclose   0x000027ac       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fclose.o)
-                0x000027ac                fclose
- .text.fflush   0x00002818       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fflush.o)
-                0x00002818                fflush
- .text.fseek    0x00002848      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
-                0x00002848                fseek
- .text.ftell    0x00002958       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
-                0x00002958                ftell
- .text.remove   0x000029a4       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(remove.o)
-                0x000029a4                remove
- .text.strlen   0x000029b8       0x4a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
-                0x000029b8                strlen
- *fill*         0x00002a02        0x2 ff
- .text._sbrk    0x00002a04       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_sbrk.o)
-                0x00002a04                _sbrk
+                0x000027dc       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x000027dc                _Csys_alloc
+ .text.fclose   0x000027fc       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fclose.o)
+                0x000027fc                fclose
+ .text.fflush   0x00002868       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fflush.o)
+                0x00002868                fflush
+ .text.fseek    0x00002898      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
+                0x00002898                fseek
+ .text.ftell    0x000029a8       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
+                0x000029a8                ftell
+ .text.remove   0x000029f4       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(remove.o)
+                0x000029f4                remove
+ .text.strlen   0x00002a08       0x4a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+                0x00002a08                strlen
+ *fill*         0x00002a52        0x2 ff
+ .text._sbrk    0x00002a54       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_sbrk.o)
+                0x00002a54                _sbrk
  .text._do_fflush
-                0x00002a44       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_do_fflush.o)
-                0x00002a44                _do_fflush
+                0x00002a94       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_do_fflush.o)
+                0x00002a94                _do_fflush
  .text.__check_heap_overflow
-                0x00002a88       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_check_heap.o)
-                0x00002a88                __check_heap_overflow
+                0x00002ad8       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_check_heap.o)
+                0x00002ad8                __check_heap_overflow
  .text.__aeabi_memcpy
-                0x00002aa0       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
-                0x00002aa0                __aeabi_memcpy
-                0x00002aaa                __aeabi_memcpy8
-                0x00002aaa                __aeabi_memcpy4
+                0x00002af0       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x00002af0                __aeabi_memcpy
+                0x00002afa                __aeabi_memcpy8
+                0x00002afa                __aeabi_memcpy4
  .text.__aeabi_memset_lowlevel
-                0x00002ad4       0x32 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
-                0x00002ad4                __aeabi_lowlevel_memset
+                0x00002b24       0x32 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x00002b24                __aeabi_lowlevel_memset
  .text.__sys_appexit
-                0x00002b06        0x2 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_appexit.o)
-                0x00002b06                __sys_appexit
-                0x00002b06                __exit
+                0x00002b56        0x2 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_appexit.o)
+                0x00002b56                __sys_appexit
+                0x00002b56                __exit
  .text.__sys_close
-                0x00002b08        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_close.o)
-                0x00002b08                __sys_close
+                0x00002b58        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_close.o)
+                0x00002b58                __sys_close
  .text.__sys_flen
-                0x00002b0e        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_flen.o)
-                0x00002b0e                __sys_flen
+                0x00002b5e        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_flen.o)
+                0x00002b5e                __sys_flen
  .text.__sys_istty
-                0x00002b14        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_istty.o)
-                0x00002b14                __sys_istty
+                0x00002b64        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_istty.o)
+                0x00002b64                __sys_istty
  .text.__sys_remove
-                0x00002b1a        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_remove.o)
-                0x00002b1a                __sys_remove
+                0x00002b6a        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_remove.o)
+                0x00002b6a                __sys_remove
  .text.__sys_seek
-                0x00002b20        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_seek.o)
-                0x00002b20                __sys_seek
+                0x00002b70        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_seek.o)
+                0x00002b70                __sys_seek
  .text.__sys_tmpnam
-                0x00002b26        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_tmpnam.o)
-                0x00002b26                __sys_tmpnam
+                0x00002b76        0x6 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_nohost.a(__sys_tmpnam.o)
+                0x00002b76                __sys_tmpnam
  *(.rodata .rodata.* .constdata .constdata.*)
  .rodata.HID_ReportDescriptor
-                0x00002b2c       0x21 ./example/src/hid_desc.o
-                0x00002b2c                HID_ReportDescriptor
- *fill*         0x00002b4d        0x1 ff
+                0x00002b7c       0x21 ./example/src/hid_desc.o
+                0x00002b7c                HID_ReportDescriptor
+ *fill*         0x00002b9d        0x1 ff
  .rodata.HID_ReportDescSize
-                0x00002b4e        0x2 ./example/src/hid_desc.o
-                0x00002b4e                HID_ReportDescSize
+                0x00002b9e        0x2 ./example/src/hid_desc.o
+                0x00002b9e                HID_ReportDescSize
  .rodata.USB_DeviceDescriptor
-                0x00002b50       0x12 ./example/src/hid_desc.o
-                0x00002b50                USB_DeviceDescriptor
- *fill*         0x00002b62        0x2 ff
+                0x00002ba0       0x12 ./example/src/hid_desc.o
+                0x00002ba0                USB_DeviceDescriptor
+ *fill*         0x00002bb2        0x2 ff
  .rodata.USB_StringDescriptor
-                0x00002b64       0x68 ./example/src/hid_desc.o
-                0x00002b64                USB_StringDescriptor
+                0x00002bb4       0x68 ./example/src/hid_desc.o
+                0x00002bb4                USB_StringDescriptor
  .rodata.g_usbApi
-                0x00002bcc       0x20 ./example/src/hid_main.o
+                0x00002c1c       0x20 ./example/src/hid_main.o
  .rodata.ledPorts
-                0x00002bec        0x3 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- *fill*         0x00002bef        0x1 ff
+                0x00002c3c        0x3 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ *fill*         0x00002c3f        0x1 ff
  .rodata.ledBits
-                0x00002bf0        0x3 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- *fill*         0x00002bf3        0x1 ff
+                0x00002c40        0x3 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ *fill*         0x00002c43        0x1 ff
  .rodata.OscRateIn
-                0x00002bf4        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00002bf4                OscRateIn
+                0x00002c44        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00002c44                OscRateIn
  .rodata.RTCOscRateIn
-                0x00002bf8        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00002bf8                RTCOscRateIn
+                0x00002c48        0x4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00002c48                RTCOscRateIn
  .rodata.pinmuxing
-                0x00002bfc       0x5c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x00002c4c       0x5c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
  .rodata.hw_api
-                0x00002c58       0x5c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
-                0x00002c58                hw_api
+                0x00002ca8       0x5c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
+                0x00002ca8                hw_api
  .rodata.core_api
-                0x00002cb4       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
-                0x00002cb4                core_api
+                0x00002d04       0x20 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
+                0x00002d04                core_api
  .rodata.hid_api
-                0x00002cd4        0x8 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
-                0x00002cd4                hid_api
+                0x00002d24        0x8 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
+                0x00002d24                hid_api
  .rodata.str1.1
-                0x00002cdc        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
+                0x00002d2c        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
  .rodata.str1.1
-                0x00002ce0       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00002cf8                . = ALIGN (0x4)
+                0x00002d30       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00002d48                . = ALIGN (0x4)
 
-.glue_7         0x00002cf8        0x0
- .glue_7        0x00002cf8        0x0 linker stubs
+.glue_7         0x00002d48        0x0
+ .glue_7        0x00002d48        0x0 linker stubs
 
-.glue_7t        0x00002cf8        0x0
- .glue_7t       0x00002cf8        0x0 linker stubs
+.glue_7t        0x00002d48        0x0
+ .glue_7t       0x00002d48        0x0 linker stubs
 
-.vfp11_veneer   0x00002cf8        0x0
- .vfp11_veneer  0x00002cf8        0x0 linker stubs
+.vfp11_veneer   0x00002d48        0x0
+ .vfp11_veneer  0x00002d48        0x0 linker stubs
 
-.v4_bx          0x00002cf8        0x0
- .v4_bx         0x00002cf8        0x0 linker stubs
+.v4_bx          0x00002d48        0x0
+ .v4_bx         0x00002d48        0x0 linker stubs
 
-.iplt           0x00002cf8        0x0
- .iplt          0x00002cf8        0x0 ./example/src/cr_startup_lpc175x_6x.o
+.iplt           0x00002d48        0x0
+ .iplt          0x00002d48        0x0 ./example/src/cr_startup_lpc175x_6x.o
 
-.rel.dyn        0x00002cf8        0x0
- .rel.iplt      0x00002cf8        0x0 ./example/src/cr_startup_lpc175x_6x.o
+.rel.dyn        0x00002d48        0x0
+ .rel.iplt      0x00002d48        0x0 ./example/src/cr_startup_lpc175x_6x.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00002cf8                __exidx_start = .
+                0x00002d48                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00002cf8                __exidx_end = .
-                0x00002cf8                _etext = .
+                0x00002d48                __exidx_end = .
+                0x00002d48                _etext = .
 
-.data_RAM2      0x2007c000        0x0 load address 0x00002cf8
+.data_RAM2      0x2007c000        0x0 load address 0x00002d48
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2, .)
  *(.ramfunc.$RAM2)
@@ -2151,7 +2151,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-.data           0x10000000       0x30 load address 0x00002cf8
+.data           0x10000000       0x30 load address 0x00002d48
  FILL mask 0xff
                 0x10000000                _data = .
  *(vtable)
@@ -2167,7 +2167,7 @@ END GROUP
                 0x10000030                . = ALIGN (0x4)
                 0x10000030                _edata = .
 
-.igot.plt       0x10000030        0x0 load address 0x00002d28
+.igot.plt       0x10000030        0x0 load address 0x00002d78
  .igot.plt      0x10000030        0x0 ./example/src/cr_startup_lpc175x_6x.o
 
 .bss_RAM2       0x2007c000        0x0
@@ -2216,23 +2216,23 @@ END GROUP
                 [!provide]                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
 OUTPUT(usbd_lib_hid_generic.axf elf32-littlearm)
 
-.debug_info     0x00000000     0xe078
+.debug_info     0x00000000     0xe079
  .debug_info    0x00000000      0x250 ./example/src/cr_startup_lpc175x_6x.o
  .debug_info    0x00000250      0x13a ./example/src/hid_desc.o
  .debug_info    0x0000038a     0x1ab0 ./example/src/hid_generic.o
  .debug_info    0x00001e3a     0x18d1 ./example/src/hid_main.o
  .debug_info    0x0000370b      0x110 ./example/src/sysinit.o
- .debug_info    0x0000381b     0x13c7 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_info    0x00004be2      0x591 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_info    0x00005173      0x51e C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_info    0x00005691      0xb62 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_info    0x000061f3      0x2e9 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_info    0x000064dc      0x439 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_info    0x00006915      0xeda C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
- .debug_info    0x000077ef     0x14f8 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
- .debug_info    0x00008ce7     0x1f77 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
- .debug_info    0x0000ac5e     0x1f80 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
- .debug_info    0x0000cbde     0x149a C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
+ .debug_info    0x0000381b     0x13c8 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_info    0x00004be3      0x591 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_info    0x00005174      0x51e C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_info    0x00005692      0xb62 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_info    0x000061f4      0x2e9 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_info    0x000064dd      0x439 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_info    0x00006916      0xeda C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_info    0x000077f0     0x14f8 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
+ .debug_info    0x00008ce8     0x1f77 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+ .debug_info    0x0000ac5f     0x1f80 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+ .debug_info    0x0000cbdf     0x149a C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
 
 .debug_abbrev   0x00000000     0x2119
  .debug_abbrev  0x00000000       0xf5 ./example/src/cr_startup_lpc175x_6x.o
@@ -2366,23 +2366,23 @@ OUTPUT(usbd_lib_hid_generic.axf elf32-littlearm)
  .debug_macro   0x000059b6      0x1e1 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .debug_macro   0x00005b97      0x1e1 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
-.debug_line     0x00000000     0x4ee8
+.debug_line     0x00000000     0x4eef
  .debug_line    0x00000000       0xdd ./example/src/cr_startup_lpc175x_6x.o
  .debug_line    0x000000dd      0x305 ./example/src/hid_desc.o
  .debug_line    0x000003e2      0x6c9 ./example/src/hid_generic.o
  .debug_line    0x00000aab      0x6f2 ./example/src/hid_main.o
  .debug_line    0x0000119d      0x4c8 ./example/src/sysinit.o
- .debug_line    0x00001665      0x85c C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_line    0x00001ec1      0x500 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_line    0x000023c1      0x478 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_line    0x00002839      0x6f4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_line    0x00002f2d      0x464 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_line    0x00003391      0x4ee C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_line    0x0000387f      0x7a0 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
- .debug_line    0x0000401f      0x198 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
- .debug_line    0x000041b7      0x54e C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
- .debug_line    0x00004705      0x4ca C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
- .debug_line    0x00004bcf      0x319 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
+ .debug_line    0x00001665      0x863 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_line    0x00001ec8      0x500 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_line    0x000023c8      0x478 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_line    0x00002840      0x6f4 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_line    0x00002f34      0x464 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_line    0x00003398      0x4ee C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_line    0x00003886      0x7a0 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_line    0x00004026      0x198 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_rom_api.o)
+ .debug_line    0x000041be      0x54e C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(hw_usbd_ip3503.o)
+ .debug_line    0x0000470c      0x4ca C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_core.o)
+ .debug_line    0x00004bd6      0x319 C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\lpc_chip_175x_6x\libs\libusbd_175x_6x_lib.a(mw_usbd_hiduser.o)
 
 .debug_str      0x00000000    0x18b84
  .debug_str     0x00000000     0x26a0 ./example/src/cr_startup_lpc175x_6x.o

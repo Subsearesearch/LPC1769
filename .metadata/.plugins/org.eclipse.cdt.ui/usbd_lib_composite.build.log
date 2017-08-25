@@ -1,4 +1,4 @@
-18:15:29 **** Build of configuration Debug for project usbd_lib_composite ****
+17:24:43 **** Build of configuration Debug for project usbd_lib_composite ****
 make -r all 
 Building file: ../example/src/cdc_vcom.c
 Invoking: MCU C Compiler
@@ -47,5 +47,5 @@ arm-none-eabi-gcc -D__REDLIB__ -DDEBUG -D__CODE_RED -D__USE_LPCOPEN -DCORE_M3 -I
   ^
 make: *** [example/src/hid_mouse.o] Error 1
 
-18:15:31 Build Finished (took 1s.513ms)
+17:24:45 Build Finished (took 1s.877ms)
 

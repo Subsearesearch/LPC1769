@@ -1,4 +1,4 @@
-18:14:03 **** Build of configuration Debug for project lpcusblib_MassStorageHost ****
+17:23:00 **** Build of configuration Debug for project lpcusblib_MassStorageHost ****
 make -r all 
 Building file: ../lpcusblib/Drivers/USB/Core/HCD/OHCI/OHCI.c
 Invoking: MCU C Compiler
@@ -89,8 +89,8 @@ make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "lpcusblib_MassStorageHost.axf"; # arm-none-eabi-objcopy -v -O binary "lpcusblib_MassStorageHost.axf" "lpcusblib_MassStorageHost.bin" ; # checksum -p LPC1769 -d "lpcusblib_MassStorageHost.bin";
    text	   data	    bss	    dec	    hex	filename
-  41736	     24	  15208	  56968	   de88	lpcusblib_MassStorageHost.axf
+  41816	     24	  15208	  57048	   ded8	lpcusblib_MassStorageHost.axf
  
 
-18:14:13 Build Finished (took 9s.344ms)
+17:23:11 Build Finished (took 10s.605ms)
 

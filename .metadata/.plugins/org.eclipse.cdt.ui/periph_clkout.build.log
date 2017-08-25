@@ -1,4 +1,4 @@
-18:14:41 **** Build of configuration Debug for project periph_clkout ****
+17:23:47 **** Build of configuration Debug for project periph_clkout ****
 make -r all 
 Building file: ../example/src/clkout.c
 Invoking: MCU C Compiler
@@ -19,8 +19,8 @@ make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "periph_clkout.axf"; # arm-none-eabi-objcopy -v -O binary "periph_clkout.axf" "periph_clkout.bin" ; # checksum -p LPC1769 -d "periph_clkout.bin";
    text	   data	    bss	    dec	    hex	filename
-   6008	      0	    344	   6352	   18d0	periph_clkout.axf
+   6088	      0	    344	   6432	   1920	periph_clkout.axf
  
 
-18:14:42 Build Finished (took 1s.642ms)
+17:23:49 Build Finished (took 1s.655ms)
 

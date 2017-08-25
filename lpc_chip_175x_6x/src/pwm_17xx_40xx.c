@@ -57,7 +57,7 @@ void Chip_PWM_Reset(LPC_PWM_T *pTMR)
         pTMR->TC = 1;
 
         /* Reset timer counter */
-        pTMR->TCR |= PWM_RESET;
+        pTMR->TCR |= PWM_RESET;		//Joey changed this from 1<<3 to 1<<1.
 
         /* Wait for terminal count to clear */
 //        while (pTMR->TC != 0) {}
@@ -109,16 +109,22 @@ void Chip_PWM_SetPulseWidth(LPC_PWM_T *pTMR, uint8_t pwmChannel, uint32_t pulseW
 
 		case 1:
 			pTMR->MR1 = pulseWidth;
+			break;
 		case 2:
 			pTMR->MR2 = pulseWidth;
+			break;
 		case 3:
 			pTMR->MR3 = pulseWidth;
+			break;
 		case 4:
 			pTMR->MR4 = pulseWidth;
+			break;
 		case 5:
 			pTMR->MR5 = pulseWidth;
+			break;
 		case 6:
 			pTMR->MR6 = pulseWidth;
+			break;
 	}
 	pTMR->LER |= (1<<pwmChannel);
 }

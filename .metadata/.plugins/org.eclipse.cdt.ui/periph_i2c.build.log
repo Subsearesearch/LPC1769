@@ -1,4 +1,4 @@
-18:14:51 **** Build of configuration Debug for project periph_i2c ****
+17:23:57 **** Build of configuration Debug for project periph_i2c ****
 make -r all 
 Building file: ../example/src/i2c.c
 Invoking: MCU C Compiler
@@ -43,5 +43,5 @@ C:\Users\Joey\Documents\LPCXpresso_8.2.2_650\MATE_Workspace\LPC1769\periph_i2c\D
 collect2.exe: error: ld returned 1 exit status
 make: *** [periph_i2c.axf] Error 1
 
-18:14:52 Build Finished (took 1s.600ms)
+17:23:59 Build Finished (took 1s.816ms)
 

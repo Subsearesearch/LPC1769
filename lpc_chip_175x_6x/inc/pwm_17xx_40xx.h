@@ -54,7 +54,7 @@ extern "C" {
 /** Timer/counter enable bit */
 #define PWM_ENABLE            ((uint32_t) (1 << 3))
 /** Timer/counter reset bit */
-#define PWM_RESET             ((uint32_t) (1 << 3))
+#define PWM_RESET             ((uint32_t) (1 << 1))
 
 /** Bit location for interrupt on MRx match, n = 0 to 3 */
 #define PWM_INT_ON_MATCH(n)   (_BIT(((n) * 3)))

@@ -1,4 +1,4 @@
-/*
+ /*
  * @brief no-RTOS LWIP HTTP Webserver example
  *
  * @note
@@ -48,6 +48,18 @@
 #include "arch/lpc17xx_40xx_emac.h"
 #include "arch/lpc_arch.h"
 #include "httpd.h"
+
+
+#define LWIP_DEBUG		1
+#define HTTPD_DEBUG     LWIP_DBG_ON
+//#define TCP_DEBUG		LWIP_DBG_ON
+//#define ETHARP_DEBUG    LWIP_DBG_ON
+//#define PBUF_DEBUG      LWIP_DBG_ON
+//#define IP_DEBUG        LWIP_DBG_ON
+//#define TCPIP_DEBUG     LWIP_DBG_ON
+//#define DHCP_DEBUG      LWIP_DBG_ON
+//#define UDP_DEBUG       LWIP_DBG_ON
+
 
 /*****************************************************************************
  * Private types/enumerations/variables

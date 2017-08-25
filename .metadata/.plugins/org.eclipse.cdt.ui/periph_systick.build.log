@@ -1,4 +1,4 @@
-18:15:08 **** Build of configuration Debug for project periph_systick ****
+17:24:17 **** Build of configuration Debug for project periph_systick ****
 make -r all 
 Building file: ../example/src/sysinit.c
 Invoking: MCU C Compiler
@@ -19,8 +19,8 @@ make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "periph_systick.axf"; # arm-none-eabi-objcopy -v -O binary "periph_systick.axf" "periph_systick.bin" ; # checksum -p LPC1769 -d "periph_systick.bin";
    text	   data	    bss	    dec	    hex	filename
-   5768	      0	    340	   6108	   17dc	periph_systick.axf
+   5848	      0	    340	   6188	   182c	periph_systick.axf
  
 
-18:15:10 Build Finished (took 1s.515ms)
+17:24:19 Build Finished (took 1s.629ms)
 

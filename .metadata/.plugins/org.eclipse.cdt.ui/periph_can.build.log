@@ -1,4 +1,4 @@
-18:14:38 **** Build of configuration Debug for project periph_can ****
+17:23:44 **** Build of configuration Debug for project periph_can ****
 make -r all 
 Building file: ../example/src/can.c
 Invoking: MCU C Compiler
@@ -19,8 +19,8 @@ make --no-print-directory post-build
 Performing post-build steps
 arm-none-eabi-size "periph_can.axf"; # arm-none-eabi-objcopy -v -O binary "periph_can.axf" "periph_can.bin" ; # checksum -p LPC1769 -d "periph_can.bin";
    text	   data	    bss	    dec	    hex	filename
-  25880	    308	    340	  26528	   67a0	periph_can.axf
+  25960	    308	    340	  26608	   67f0	periph_can.axf
  
 
-18:14:40 Build Finished (took 1s.495ms)
+17:23:46 Build Finished (took 1s.825ms)
 
